@@ -1,10 +1,12 @@
-const repeatString = function() {
-   let text = 'hey' 
+const repeatString = function(text, times) { 
    for (i = 0; i < 100; i++) {
-    text += text.concat(text);
-    return text;
+    if(times > 0) {
+        return text.repeat(times);
+    } else {
+        return '';
+    }
    }
 };
-
+repeatString('hey', 1)
 // Do not edit below this line
 module.exports = repeatString;
