@@ -2,8 +2,10 @@ const repeatString = function(text, times) {
    for (i = 0; i < 100; i++) {
     if(times > 0) {
         return text.repeat(times);
-    } else {
+    } else if (times == 0 || text == ''){
         return '';
+    } else if (times < 0){
+        return 'ERROR';
     }
    }
 };
