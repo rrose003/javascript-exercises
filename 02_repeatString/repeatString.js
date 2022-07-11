@@ -1,10 +1,10 @@
-const repeatString = function(text, times) { 
-   for (i = 0; i < 100; i++) {
-    if(times > 0) {
-        return text.repeat(times);
-    } else if (times == 0 || text == ''){
+const repeatString = function(text, number) { 
+   for (i = 0; i < 1000; i++) {
+    if(number > 0) {
+        return text.repeat(number);
+    } else if (number == 0 || text == ''){
         return '';
-    } else if (times < 0){
+    } else if (number < 0){
         return 'ERROR';
     }
    }
