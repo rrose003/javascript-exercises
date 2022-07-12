@@ -28,8 +28,17 @@ const power = function(value, power) {
 	return (Math.pow(value, power));
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+	if (num < 0) {
+    return -1;
+  } else if (num === 0 || num === 1) {
+    return 1;
+  } else {
+    for (i = num - 1; i >= 1; i--) {
+      num *= i;
+    }
+    return num;
+  }
 };
 
 // Do not edit below this line
