@@ -15,13 +15,13 @@ const sum = function(arr) {
     return sum;
 };
 
-const multiply = function(arr) {
-  let multi = 0;
+const multiply = function(array) {
+  let total = 1;
 
-  for (i = 0; i < arr.length; i++) {
-    multi *= arr[i];
+  for (i = 0; i < array.length; i++) {
+    total *= array[i];
   }
-  return multi;
+  return total;
 };
 
 const power = function() {
