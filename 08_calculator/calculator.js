@@ -7,17 +7,12 @@ const subtract = function(a, b) {
 };
 
 const sum = function(arr) {
-  let sum;
-	if (arr == []) {
-    return 0;
-  } else if (typeof(arr[0]) == 'number' && typeof(arr[1] == 'undefined')) {
-    return arr;
-  } else {
+  let sum = 0;
+
     for (i = 0; i < arr.length; i++) {
        sum += arr[i];
     }
     return sum;
-  }
 };
 
 const multiply = function() {
