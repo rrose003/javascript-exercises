@@ -1,12 +1,9 @@
-const removeFromArray = function(arr, item, index) {
-    for (i = 0; i < arr.length; i++) {
-        if (arr.includes(item)[index]) {
-            arr.splice(item, i);
-            i--;
-        } else {
-            return arr;
-        }
-    } 
+const removeFromArray = function(arr, value) {
+    var index = arr.indexOf(value);
+    if (index > -1){
+        arr.splice(index, 1);
+    }
+    return arr;
 };
 
 // Do not edit below this line
