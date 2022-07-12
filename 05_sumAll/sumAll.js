@@ -1,7 +1,7 @@
 const sumAll = function(min, max) {
     let lower;
     let upper;
-    if (min > 0 && max > 0) {
+    if (min > 0 && max > 0 && typeof(min) == 'number' && typeof(max) == 'number') {
         if (min < max) {
             lower = min;
             upper = max;
